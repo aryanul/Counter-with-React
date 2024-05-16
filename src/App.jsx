@@ -9,10 +9,10 @@ function App() {
     setCounter(counter + 1)
   }
   const decValue =() =>{
-    counter >= 0
-    counter = counter -1
+    if (counter>0) {
+      setCounter(counter -1)
+    }
     
-    setCounter(counter)
   }
   // if (counter<0) {
   //   alert("This counter is not allowed go less than zero !")
